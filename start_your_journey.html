@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Journey - Wanderlust Adventures</title>
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-gray-800">
+
+    <!-- HEADER (copiado exactamente del index) -->
+    <header class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <div class="text-2xl font-bold tracking-wider text-amber-400">
+                Wanderlust
+            </div>
+            
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="hover:text-amber-400 transition">Home</a>
+                <a href="#" class="hover:text-amber-400 transition">Adventures</a>
+                <a href="#" class="hover:text-amber-400 transition">Blog & Tips</a>
+                <button class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-2 px-4 rounded-lg shadow-md">
+                    START YOUR JOURNEY!
+                </button>
+            </nav>
+
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="bg-white py-16">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-center mb-10">
+                Start Your Journey
+            </h1>
+
+            <p class="text-center text-gray-600 text-lg mb-12">
+                Tell us your dream, your budget, and your vibe — and we’ll help you discover 
+                the perfect backpacker route.
+            </p>
+
+            <!-- FORM SECTION -->
+            <form class="bg-gray-50 p-8 rounded-xl shadow-xl space-y-6">
+
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2">Where do you want to travel?</label>
+                    <input type="text" placeholder="Ex: Southeast Asia, Europe, Patagonia…" 
+                           class="form-input">
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2">Maximum Budget (USD)</label>
+                    <input type="number" min="100" placeholder="Ex: 1200" class="form-input">
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2">Travel Duration</label>
+                    <select class="form-input">
+                        <option value="">Select duration</option>
+                        <option>1 week</option>
+                        <option>2 weeks</option>
+                        <option>3 weeks</option>
+                        <option>1 month</option>
+                        <option>More than 1 month</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2">Your Travel Style</label>
+                    <select class="form-input">
+                        <option value="">Choose your style</option>
+                        <option>Adventure & Trekking</option>
+                        <option>Parties & Nightlife</option>
+                        <option>Cultural Exploration</option>
+                        <option>Beach Relaxation</option>
+                        <option>Mixed / I want everything!</option>
+                    </select>
+                </div>
+
+                <button class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 w-full rounded-lg shadow-lg transition">
+                    Generate My Backpacker Route
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER (igual que index) -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-6 md:space-y-0">
+
+                <div class="text-center md:text-left">
+                    <h4 class="text-xl font-bold mb-2 text-amber-400">Wanderlust</h4>
+                    <p class="text-sm text-gray-400 mb-3">Your best low-cost adventure.</p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">TikTok</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="flex space-x-8">
+                    <div>
+                        <h5 class="footer-title">Routes</h5>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">South America</a></li>
+                            <li><a href="#" class="footer-link">Asia</a></li>
+                            <li><a href="#" class="footer-link">Interrail</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="footer-title">Info</h5>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">About Us</a></li>
+                            <li><a href="#" class="footer-link">FAQ</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 Wanderlust Adventures. All rights reserved. | 
+                <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

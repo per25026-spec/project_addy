@@ -1,0 +1,198 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* ROUTE CARDS -------------------------------------------------- */
+
+.card-route {
+    background-color: #f9fafb;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card-route:hover {
+    transform: scale(1.02);
+}
+
+.route-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: white;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.route-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.route-text {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.route-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #d97706;
+}
+
+.route-btn {
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: #fcd34d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    color: #111827;
+    transition: background-color 0.3s;
+}
+
+.route-btn:hover {
+    background-color: #fbbf24;
+}
+
+/* FOOTER ------------------------------------------------------ */
+
+.social-link {
+    color: #9ca3af;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-link {
+    color: #9ca3af;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.copyright {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #374151;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+
+/* ==========================
+   START YOUR JOURNEY PAGE
+========================== */
+
+.start-page-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(180deg, #000, #111);
+    color: white;
+}
+
+.start-page-hero h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.start-page-hero .hero-sub {
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.journey-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    gap: 60px;
+    background-color: #111;
+    color: white;
+}
+
+.journey-text h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.journey-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 550px;
+}
+
+.journey-photo img {
+    width: 500px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.journey-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.journey-btn:hover {
+    background-color: #e2e2e2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .journey-main {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .journey-photo img {
+        width: 100%;
+    }
+}
