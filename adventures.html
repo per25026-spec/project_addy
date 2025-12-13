@@ -43,46 +43,78 @@
     </header>
 
     <main>
-        <!-- H1 Title -->
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight drop-shadow-lg">Adventures</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Route Card 1: Activity 1 -->
-            <div class="bg-gray-50 rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative">
-                <h1 class="w-full h-48 object-cover">Activity 1</h1>
+<!-- 2. HERO BLOCK AND QUICK SEARCH -->
+        <section class="bg-gray-800 text-white relative min-h-[400px] flex items-center justify-center p-6">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="z-20 text-center p-6 max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight drop-shadow-lg">
+                    EXPLORE THE WORLD, NOT YOUR WALLET.
+                </h1>
+
+                <form class="bg-white/90 p-6 sm:p-8 rounded-xl shadow-2xl space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                    <input type="text" placeholder="Where do you want to go? (Ex: Southeast Asia)" 
+                        class="w-full sm:flex-1 p-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500 text-gray-800" required>
+
+                    <input type="number" placeholder="Max Budget (USD)" 
+                        class="w-full sm:w-40 p-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500 text-gray-800" min="100" required>
+
+                    <button type="submit" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transition">
+                        Find Adventure
+                    </button>
+                </form>
+            </div>
+        </section>
+            
+        <!-- Route Card 1: Activity 1 -->
+            <h2 class="text-3xl font-bold text-center mb-12 pt-10">OUR AWESOME LOW-COST ADVENTURES</h2>
+            <div class="px-10 bg-gray-50 rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative">
+                <img
+                    src="photos/joshua-sortino-rAqzj79GUmA-unsplash.jpg"
+                    alt="Light inside a cave during a spelunking adventure"
+                    class="w-full h-48 object-cover object-center rounded-t-xl"
+                />
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Activity 1</h3>
-                    <p class="text-gray-600 mb-4 text-sm">Description</p>
+                    <h3 class="text-xl font-bold mb-2">Spelunking Adventures</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Enjoy cave exploration and guided tours given across the globe.</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-2xl font-extrabold text-amber-600">Undefined</span>
-                        <a href="#" class="text-sm font-semibold text-gray-900 bg-amber-200 hover:bg-amber-300 py-2 px-4 rounded-full transition">View Route</a>
+                        <span class="text-2xl font-extrabold text-amber-600">From $120 USD</span>
+                        <a href="#" class="text-sm font-semibold text-gray-900 bg-amber-200 hover:bg-amber-300 py-2 px-4 rounded-full transition">Display Adventure</a>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-gray-50 rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative">
-                <h1 class="w-full h-48 object-cover">Activity 2</h1>
+            <div class="px-10 bg-gray-50 rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative">
+                <img 
+                src="photos/pietro-de-grandi-ZLcZlM0gi_c-unsplash.jpg"
+                alt="Skiing in the mountains"
+                class="w-full h-48 object-cover object-center rounded-t-xl"
+                />
                 <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Activity 2</h3>
-                    <p class="text-gray-600 mb-4 text-sm">Description</p>
+                    <h3 class="text-xl font-bold mb-2">Skiing Adventures</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Have fun in the snow while enjoying the top pick ski resourts.</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-2xl font-extrabold text-amber-600">Undefined</span>
-                        <a href="#" class="text-sm font-semibold text-gray-900 bg-amber-200 hover:bg-amber-300 py-2 px-4 rounded-full transition">View Route</a>
+                        <span class="text-2xl font-extrabold text-amber-600">From $400 USD</span>
+                        <a href="#" class="text-sm font-semibold text-gray-900 bg-amber-200 hover:bg-amber-300 py-2 px-4 rounded-full transition">Display Adventure</a>
                     </div>
                 </div>
-            </div>        
-                <div class="bg-gray-50 rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative">
-                    <h1 class="w-full h-48 object-cover">Activity 3</h1>
+            </div>
+
+                <div class="px-10 bg-gray-50 rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition duration-300 relative">
+                    <img 
+                    src="photos/kaur-kristjan-P7paqjWpTTA-unsplash.jpg"
+                    alt="Mountain biking adventure"
+                    class="w-full h-48 object-cover object-center rounded-t-xl"
+                    />
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Activity 3</h3>
-                        <p class="text-gray-600 mb-4 text-sm">Description</p>
+                        <h3 class="text-xl font-bold mb-2">Biking Adventures</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Speed ahead to see the beauty along each unique bike trail.</p>
                         <div class="flex justify-between items-center">
-                            <span class="text-2xl font-extrabold text-amber-600">Undefined</span>
-                            <a href="#" class="text-sm font-semibold text-gray-900 bg-amber-200 hover:bg-amber-300 py-2 px-4 rounded-full transition">View Route</a>
+                            <span class="text-2xl font-extrabold text-amber-600">From $250 USD</span>
+                            <a href="#" class="text-sm font-semibold text-gray-900 bg-amber-200 hover:bg-amber-300 py-2 px-4 rounded-full transition">Display Adventure</a>
                         </div>
                     </div>
                 </div>        
             </div>        
-        </div>    
     </main>
 
     <!-- 4. FOOTER -->
